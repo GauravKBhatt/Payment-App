@@ -39,7 +39,7 @@ COPY requirements.txt /tmp/requirements.txt
 
 # copy the project code into the container's working directory
 COPY /src /code
-COPY src/cfehome/.env /code/cfehome/.env
+
 
 
 # Install the Python project requirements
