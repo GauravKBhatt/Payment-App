@@ -15,7 +15,10 @@ DJANGO_SECRET_KEY = config("DJANGO_SECRET_KEY",default='django-insecure-ib38!1c9
 DJANGO_DEBUG = config("DJANGO_DEBUG",cast=bool,default=0)
 
 from decouple import Config
-config = Config('.env')
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+config = Config(BASE_DIR / '.env')
 ALLOWED_HOSTS = [
     ".railway.app",
 ]
