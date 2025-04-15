@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # tried to use python decoupling but it is not working. 
 SECRET_KEY = config("DJANGO_SECRET_KEY",default='django-insecure-ib38!1c9yfvddmkwmce*9j9l5lvgvl8xr)306629j@006#7&o0')
-DEBUG = config("DJANGO_DEBUG",cast=bool,default=True)
+DEBUG = config("DJANGO_DEBUG",cast=bool,default=1)
 
 
 ALLOWED_HOSTS = [
