@@ -11,8 +11,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # tried to use python decoupling but it is not working. 
-SECRET_KEY = config("DJANGO_SECRET_KEY",default='django-insecure-ib38!1c9yfvddmkwmce*9j9l5lvgvl8xr)306629j@006#7&o0')
-DEBUG = config("DJANGO_DEBUG",cast=bool,default=0)
+DJANGO_SECRET_KEY = config("DJANGO_SECRET_KEY",default='django-insecure-ib38!1c9yfvddmkwmce*9j9l5lvgvl8xr)306629j@006#7&o0')
+DJANGO_DEBUG = config("DJANGO_DEBUG",cast=bool,default=0)
 
 
 ALLOWED_HOSTS = [
