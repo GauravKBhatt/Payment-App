@@ -1,8 +1,11 @@
 <html>
   <head>
     <a href="{% url 'Home' %}">Home</a>
+    {% include 'base/css.html'%}
   </head>
   <body>
+    {% include 'nav/navbar.html'%}
     {% block content %} {% endblock %}
   </body>
+  {% include 'base/js.html'%}
 </html>

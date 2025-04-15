@@ -1,3 +1,9 @@
+#ignore vendor files 
+src\staticfiles\vendors
+
+#ignore the local content delivery network
+local-cdn
+
 # Django #
 *.log
 *.pot
