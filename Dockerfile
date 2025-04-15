@@ -39,7 +39,7 @@ COPY requirements.txt /tmp/requirements.txt
 
 # copy the project code into the container's working directory
 COPY /src /code
-
+COPY .env .env
 
 # Install the Python project requirements
 RUN pip install -r /tmp/requirements.txt
