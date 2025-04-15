@@ -18,7 +18,7 @@ DJANGO_DEBUG = config("DJANGO_DEBUG",cast=bool,default=0)
 ALLOWED_HOSTS = [
     ".railway.app",
 ]
-if DEBUG:
+if DJANGO_DEBUG:
     ALLOWED_HOSTS +=[
         "127.0.0.1",
         "localhost"
